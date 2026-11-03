@@ -6,9 +6,9 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "holiday-api-staging"
-# Staging D1 on Yohanes's Cloudflare account (created 2026-11-03). Create a separate DB for production.
+# Replace with your own ID from `wrangler d1 create holiday-api-staging` before running remote commands.
 # Local dev (`wrangler dev --local`, `--local` d1 commands) uses a local SQLite copy, not this DB.
-database_id = "c9bd9d71-40d2-4ec6-9312-ce65e8510507"
+database_id = "00000000-0000-0000-0000-000000000000"
 migrations_dir = "migrations"
 
 # Burst limiting (Workers Rate Limiting binding), one namespace per tier.

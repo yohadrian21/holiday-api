@@ -1,5 +1,7 @@
 # holiday-api
 
+> **TL;DR:** A REST API for Indonesian public holidays and business-day math (working-day checks, date + N business days, working days in a range), built on Cloudflare Workers + Hono + D1 with API-key auth, per-tier quotas, burst rate limiting, an OpenAPI spec and Vitest tests.
+
 Indonesia public holiday & business-day API. It covers *libur nasional* and *cuti bersama* (collective leave) from the official SKB 3 Menteri decrees. It answers questions like "is this date a working day?", "what is date + N business days?" and "how many working days are in this range?".
 
 Built with Cloudflare Workers, Hono and D1 (SQLite). v0.1 runs locally only and has not been deployed yet (see [SCOPE.md](SCOPE.md)). The full API spec is in [openapi.yaml](openapi.yaml).
@@ -135,11 +137,3 @@ openapi.yaml            API spec
 - Keys are issued only through the CLI. There is no self-serve sign-up and no billing integration yet.
 - `wrangler.toml` has a placeholder `database_id`, so remote commands will not work until a real D1 database is created.
 - `@cloudflare/vitest-pool-workers` prints a deprecation warning saying it was renamed to `@cloudflare/vitest-plugin`. Tests still pass, and migrating is a small follow-up.
-
-## Staging (Cloudflare)
-
-- Account: Yohanes's Cloudflare account (`e43768c24ce90c75e785fb963273971d`).
-- Worker script: `holiday-api-staging` (uploaded 2026-11-03 via the Cloudflare API, with the D1, rate-limit and `RAPIDAPI_PROXY_SECRET` bindings).
-- D1: `holiday-api-staging` (`c9bd9d71-40d2-4ec6-9312-ce65e8510507`), migrated and seeded with 2024–2027 (106 rows).
-- URL: **https://holiday-api-staging.yrstudio.workers.dev** (workers.dev subdomain `yrstudio`, route enabled 2026-11-03; smoke-tested OK). Example: `curl -H "X-API-Key: $KEY" https://holiday-api-staging.yrstudio.workers.dev/v1/working-day?date=2026-03-20`
-- The staging secret and the free-tier test key are kept only in `.secrets/staging.env` (gitignored, mode 600).
