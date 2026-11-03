@@ -1,0 +1,2 @@
+# Copy to .dev.vars for local dev. Leave empty to disable the RapidAPI path.
+RAPIDAPI_PROXY_SECRET=change-me

@@ -1,0 +1,28 @@
+{
+  "name": "holiday-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "wrangler d1 migrations apply DB --local",
+    "db:build-seed": "tsx scripts/build-seed.ts",
+    "db:seed": "tsx scripts/build-seed.ts && wrangler d1 execute DB --local --file seed/seed.sql",
+    "key:create": "tsx scripts/create-key.ts create",
+    "key:revoke": "tsx scripts/create-key.ts revoke"
+  },
+  "dependencies": {
+    "hono": "^4.13.16"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.23.0",
+    "@cloudflare/workers-types": "^5.20261103.1",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12",
+    "wrangler": "^4.156.2"
+  }
+}

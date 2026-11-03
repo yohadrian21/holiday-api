@@ -1,0 +1,373 @@
+openapi: 3.0.3
+info:
+  title: Indonesia Holiday & Business-Day API
+  version: 0.1.0
+  description: |
+    Indonesian public holidays (libur nasional) and cuti bersama, plus business-day arithmetic.
+
+    **Dates** are `YYYY-MM-DD` Asia/Jakarta calendar dates. All arithmetic is plain calendar-date
+    arithmetic; no time zone conversion is applied to inputs.
+
+    **Supported years**: only years with loaded official data. Any request touching another year
+    returns `422 year_not_supported` (it is never silently treated as "all working days").
+
+    **Auth**: send `X-API-Key`. Requests via RapidAPI are authenticated by the gateway
+    (`X-RapidAPI-Proxy-Secret`) and are metered by RapidAPI instead of our quota.
+
+    **Limits** (per key):
+
+    | Tier | Monthly quota | Burst |
+    |---|---|---|
+    | free | 1,000 | 50 req / 10 s |
+    | starter | 50,000 | 200 req / 10 s |
+    | business | unlimited | 500 req / 10 s |
+
+    The monthly period is the calendar month in Asia/Jakarta. Requests rejected with 429 do not
+    consume quota. Burst limits use the Cloudflare Workers Rate Limiting binding, which counts per
+    Cloudflare location and is approximate (eventually consistent), so a client hitting several
+    locations, or a short spike, may briefly exceed the listed burst limit.
+
+    **Rate-limit headers** are sent on every response for authenticated API-key requests
+    (including 4xx after successful auth). They describe the *monthly quota*:
+    `X-RateLimit-Limit` / `X-RateLimit-Remaining` are `unlimited` for the business tier;
+    `X-RateLimit-Reset` is the Unix time (seconds) when the period resets. They are omitted on
+    the RapidAPI path (the gateway sends its own) and on 401 responses.
+servers:
+  - url: http://localhost:8787
+    description: Local (wrangler dev --local)
+security:
+  - ApiKey: []
+  - RapidApiProxy: []
+tags:
+  - name: holidays
+    description: Official holiday and cuti bersama listings
+  - name: business-days
+    description: Working-day checks and arithmetic
+  - name: system
+    description: Operational endpoints
+
+paths:
+  /v1/health:
+    get:
+      operationId: getHealth
+      tags: [system]
+      summary: Health check (no auth)
+      security: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [status, time, meta]
+                properties:
+                  status: { type: string, enum: [ok] }
+                  time: { type: string, format: date-time }
+                  meta: { $ref: "#/components/schemas/Meta" }
+
+  /v1/holidays:
+    get:
+      operationId: listHolidays
+      tags: [holidays]
+      summary: List holidays for a year
+      parameters:
+        - name: year
+          in: query
+          required: true
+          schema: { type: string, pattern: '^\d{4}$', example: "2026" }
+        - name: type
+          in: query
+          schema: { type: string, enum: [national, cuti_bersama] }
+      responses:
+        "200":
+          description: Holidays ordered by date
+          headers:
+            X-RateLimit-Limit: { $ref: "#/components/headers/X-RateLimit-Limit" }
+            X-RateLimit-Remaining: { $ref: "#/components/headers/X-RateLimit-Remaining" }
+            X-RateLimit-Reset: { $ref: "#/components/headers/X-RateLimit-Reset" }
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [year, holidays, meta]
+                properties:
+                  year: { type: integer }
+                  holidays: { type: array, items: { $ref: "#/components/schemas/Holiday" } }
+                  meta: { $ref: "#/components/schemas/Meta" }
+        "400": { $ref: "#/components/responses/BadRequest" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/YearNotSupported" }
+        "429": { $ref: "#/components/responses/TooManyRequests" }
+
+  /v1/working-day:
+    get:
+      operationId: getWorkingDay
+      tags: [business-days]
+      summary: Is a date a working day?
+      description: |
+        `reason` is the holiday name(s) (English, joined with " / ") if the date is a holiday
+        (even if it is also a weekend), `"weekend"` for a plain weekend day, otherwise `null`.
+        With `cuti_bersama=exclude`, cuti bersama days are ignored (treated as working days).
+      parameters:
+        - $ref: "#/components/parameters/date"
+        - $ref: "#/components/parameters/cuti_bersama"
+        - $ref: "#/components/parameters/week"
+      responses:
+        "200":
+          description: Result
+          headers:
+            X-RateLimit-Limit: { $ref: "#/components/headers/X-RateLimit-Limit" }
+            X-RateLimit-Remaining: { $ref: "#/components/headers/X-RateLimit-Remaining" }
+            X-RateLimit-Reset: { $ref: "#/components/headers/X-RateLimit-Reset" }
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [date, is_working_day, is_weekend, reason, holiday, holidays, options, meta]
+                properties:
+                  date: { type: string, format: date }
+                  is_working_day: { type: boolean }
+                  is_weekend: { type: boolean }
+                  reason: { type: string, nullable: true, example: weekend }
+                  holiday:
+                    type: object
+                    nullable: true
+                    allOf: [{ $ref: "#/components/schemas/Holiday" }]
+                    description: First applicable holiday, or null.
+                  holidays: { type: array, items: { $ref: "#/components/schemas/Holiday" } }
+                  options: { $ref: "#/components/schemas/Options" }
+                  meta: { $ref: "#/components/schemas/Meta" }
+        "400": { $ref: "#/components/responses/BadRequest" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/YearNotSupported" }
+        "429": { $ref: "#/components/responses/TooManyRequests" }
+
+  /v1/business-days/add:
+    get:
+      operationId: addBusinessDays
+      tags: [business-days]
+      summary: Add (or subtract) business days
+      description: |
+        Moves `days` working days from `date`; the start date itself is never counted.
+        Negative `days` moves backward. `days=0` returns `date` if it is a working day,
+        otherwise the **next** working day after it. Returns 422 if the walk enters a year
+        without loaded data.
+      parameters:
+        - $ref: "#/components/parameters/date"
+        - name: days
+          in: query
+          required: true
+          schema: { type: integer, minimum: -1000, maximum: 1000 }
+        - $ref: "#/components/parameters/cuti_bersama"
+        - $ref: "#/components/parameters/week"
+      responses:
+        "200":
+          description: Result
+          headers:
+            X-RateLimit-Limit: { $ref: "#/components/headers/X-RateLimit-Limit" }
+            X-RateLimit-Remaining: { $ref: "#/components/headers/X-RateLimit-Remaining" }
+            X-RateLimit-Reset: { $ref: "#/components/headers/X-RateLimit-Reset" }
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [date, days, result, options, meta]
+                properties:
+                  date: { type: string, format: date }
+                  days: { type: integer }
+                  result: { type: string, format: date }
+                  options: { $ref: "#/components/schemas/Options" }
+                  meta: { $ref: "#/components/schemas/Meta" }
+        "400": { $ref: "#/components/responses/BadRequest" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/YearNotSupported" }
+        "429": { $ref: "#/components/responses/TooManyRequests" }
+
+  /v1/working-days/count:
+    get:
+      operationId: countWorkingDays
+      tags: [business-days]
+      summary: Count working days in a range or month
+      description: |
+        Provide either `start` + `end` (inclusive, at most 3660 days) or `month`.
+        Each date is counted once: a holiday on a weekend counts in `holidays_on_weekends`
+        only and is not double-counted as non-working. With `week=6`, Saturday is a weekday,
+        so a Saturday holiday counts in `holidays_on_weekdays`.
+        `working_days = calendar_days - weekend_days - holidays_on_weekdays`.
+      parameters:
+        - name: start
+          in: query
+          schema: { type: string, format: date }
+        - name: end
+          in: query
+          schema: { type: string, format: date }
+        - name: month
+          in: query
+          schema: { type: string, pattern: '^\d{4}-\d{2}$', example: "2026-02" }
+        - $ref: "#/components/parameters/cuti_bersama"
+        - $ref: "#/components/parameters/week"
+      responses:
+        "200":
+          description: Counts
+          headers:
+            X-RateLimit-Limit: { $ref: "#/components/headers/X-RateLimit-Limit" }
+            X-RateLimit-Remaining: { $ref: "#/components/headers/X-RateLimit-Remaining" }
+            X-RateLimit-Reset: { $ref: "#/components/headers/X-RateLimit-Reset" }
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [start, end, calendar_days, working_days, weekend_days, holidays_on_weekdays, holidays_on_weekends, non_working_days, holidays, options, meta]
+                properties:
+                  start: { type: string, format: date }
+                  end: { type: string, format: date }
+                  calendar_days: { type: integer }
+                  working_days: { type: integer }
+                  weekend_days: { type: integer }
+                  holidays_on_weekdays: { type: integer, description: Holiday dates that remove an otherwise-working day }
+                  holidays_on_weekends: { type: integer }
+                  non_working_days: { type: integer }
+                  holidays:
+                    type: array
+                    description: Applicable holidays in the range (cuti bersama omitted when excluded)
+                    items: { $ref: "#/components/schemas/Holiday" }
+                  options: { $ref: "#/components/schemas/Options" }
+                  meta: { $ref: "#/components/schemas/Meta" }
+        "400": { $ref: "#/components/responses/BadRequest" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/YearNotSupported" }
+        "429": { $ref: "#/components/responses/TooManyRequests" }
+
+components:
+  securitySchemes:
+    ApiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: "Key format: `ika_live_<32 base62 chars>`."
+    RapidApiProxy:
+      type: apiKey
+      in: header
+      name: X-RapidAPI-Proxy-Secret
+      description: Set by the RapidAPI gateway only. A wrong value returns 401 `invalid_proxy_secret`.
+
+  parameters:
+    date:
+      name: date
+      in: query
+      required: true
+      schema: { type: string, format: date, example: "2026-01-02" }
+    cuti_bersama:
+      name: cuti_bersama
+      in: query
+      description: "`include` (default): cuti bersama is non-working. `exclude`: cuti bersama days are treated as working days."
+      schema: { type: string, enum: [include, exclude], default: include }
+    week:
+      name: week
+      in: query
+      description: "`5` (default): Saturday and Sunday off. `6`: only Sunday off."
+      schema: { type: integer, enum: [5, 6], default: 5 }
+
+  headers:
+    X-RateLimit-Limit:
+      description: Monthly quota, or `unlimited`.
+      schema: { type: string }
+    X-RateLimit-Remaining:
+      description: Requests left this period, or `unlimited`.
+      schema: { type: string }
+    X-RateLimit-Reset:
+      description: Unix time (seconds) when the monthly period resets (start of next month, Asia/Jakarta).
+      schema: { type: integer }
+    Retry-After:
+      description: Seconds to wait. `10` for burst limiting; seconds until period reset for quota.
+      schema: { type: integer }
+
+  schemas:
+    Holiday:
+      type: object
+      required: [date, name_id, name_en, type, source]
+      properties:
+        date: { type: string, format: date }
+        name_id: { type: string, description: Official Indonesian name }
+        name_en: { type: string }
+        type: { type: string, enum: [national, cuti_bersama] }
+        source:
+          type: object
+          required: [ref, url]
+          properties:
+            ref: { type: string, description: Decree reference (e.g. SKB number) }
+            url: { type: string }
+    Options:
+      type: object
+      properties:
+        cuti_bersama: { type: string, enum: [include, exclude] }
+        week: { type: integer, enum: [5, 6] }
+    Meta:
+      type: object
+      required: [data_version, updated_at]
+      description: Latest row of the data_versions table (null if no data is loaded).
+      properties:
+        data_version: { type: string, nullable: true }
+        updated_at: { type: string, format: date-time, nullable: true }
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code:
+              type: string
+              enum:
+                - missing_parameter
+                - invalid_parameter
+                - invalid_date
+                - invalid_range
+                - out_of_range
+                - year_not_supported
+                - missing_api_key
+                - invalid_api_key
+                - revoked_api_key
+                - invalid_proxy_secret
+                - quota_exceeded
+                - rate_limited
+                - not_found
+                - internal_error
+            message: { type: string }
+
+  responses:
+    BadRequest:
+      description: "Invalid input: `missing_parameter`, `invalid_parameter`, `invalid_date` (e.g. 2026-02-30), `invalid_range` (end < start), `out_of_range` (range > 3660 days or |days| > 1000)."
+      headers:
+        X-RateLimit-Limit: { $ref: "#/components/headers/X-RateLimit-Limit" }
+        X-RateLimit-Remaining: { $ref: "#/components/headers/X-RateLimit-Remaining" }
+        X-RateLimit-Reset: { $ref: "#/components/headers/X-RateLimit-Reset" }
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    Unauthorized:
+      description: "`missing_api_key`, `invalid_api_key`, `revoked_api_key`, or `invalid_proxy_secret`."
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    YearNotSupported:
+      description: "`year_not_supported`: the request touches a year with no loaded holiday data."
+      headers:
+        X-RateLimit-Limit: { $ref: "#/components/headers/X-RateLimit-Limit" }
+        X-RateLimit-Remaining: { $ref: "#/components/headers/X-RateLimit-Remaining" }
+        X-RateLimit-Reset: { $ref: "#/components/headers/X-RateLimit-Reset" }
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+    TooManyRequests:
+      description: "`rate_limited` (burst; Retry-After: 10) or `quota_exceeded` (monthly; Retry-After until reset)."
+      headers:
+        Retry-After: { $ref: "#/components/headers/Retry-After" }
+        X-RateLimit-Limit: { $ref: "#/components/headers/X-RateLimit-Limit" }
+        X-RateLimit-Remaining: { $ref: "#/components/headers/X-RateLimit-Remaining" }
+        X-RateLimit-Reset: { $ref: "#/components/headers/X-RateLimit-Reset" }
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }

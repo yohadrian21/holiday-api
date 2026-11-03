@@ -1,0 +1,288 @@
+{
+  "year": 2025,
+  "data_version": "2025.2",
+  "updated_at": "2026-11-03T05:00:00Z",
+  "decrees": [
+    {
+      "kind": "original",
+      "ref": "SKB Menag/Menaker/MenPANRB No. 1017 Tahun 2024, No. 2 Tahun 2024, No. 2 Tahun 2024",
+      "signed": "2024-10-14",
+      "url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-10/SKB%203%20Menteri%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "kind": "revision",
+      "ref": "SKB No. 933 Tahun 2025, No. 1 Tahun 2025, No. 3 Tahun 2025 (adds cuti bersama 18 Aug 2025)",
+      "signed": "2025-08-07",
+      "url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    }
+  ],
+  "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+  "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf",
+  "entries": [
+    {
+      "date": "2025-01-01",
+      "type": "national",
+      "name_id": "Tahun Baru 2025 Masehi",
+      "name_en": "New Year's Day",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-01-27",
+      "type": "national",
+      "name_id": "Isra Mikraj Nabi Muhammad S.A.W.",
+      "name_en": "Isra Mi'raj of the Prophet Muhammad",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-01-28",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Tahun Baru Imlek 2576 Kongzili",
+      "name_en": "Chinese New Year 2576 (collective leave)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-01-29",
+      "type": "national",
+      "name_id": "Tahun Baru Imlek 2576 Kongzili",
+      "name_en": "Chinese New Year 2576",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-03-28",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Suci Nyepi (Tahun Baru Saka 1947)",
+      "name_en": "Day of Silence (Nyepi, Saka New Year) (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-03-29",
+      "type": "national",
+      "name_id": "Hari Suci Nyepi (Tahun Baru Saka 1947)",
+      "name_en": "Day of Silence (Nyepi, Saka New Year)",
+      "weekday_id": "Sabtu",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-03-31",
+      "type": "national",
+      "name_id": "Idul Fitri 1446 Hijriah",
+      "name_en": "Eid al-Fitr 1446 H (day 1)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-04-01",
+      "type": "national",
+      "name_id": "Idul Fitri 1446 Hijriah",
+      "name_en": "Eid al-Fitr 1446 H (day 2)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-04-02",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Fitri 1446 Hijriah",
+      "name_en": "Eid al-Fitr 1446 H (collective leave)",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-04-03",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Fitri 1446 Hijriah",
+      "name_en": "Eid al-Fitr 1446 H (collective leave)",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-04-04",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Fitri 1446 Hijriah",
+      "name_en": "Eid al-Fitr 1446 H (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-04-07",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Fitri 1446 Hijriah",
+      "name_en": "Eid al-Fitr 1446 H (collective leave)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-04-18",
+      "type": "national",
+      "name_id": "Wafat Yesus Kristus",
+      "name_en": "Good Friday (Death of Jesus Christ)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-04-20",
+      "type": "national",
+      "name_id": "Kebangkitan Yesus Kristus (Paskah)",
+      "name_en": "Easter Sunday (Resurrection of Jesus Christ)",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-05-01",
+      "type": "national",
+      "name_id": "Hari Buruh Internasional",
+      "name_en": "International Labour Day",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-05-12",
+      "type": "national",
+      "name_id": "Hari Raya Waisak 2569 BE",
+      "name_en": "Vesak Day 2569 BE",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-05-13",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Waisak 2569 BE",
+      "name_en": "Vesak Day 2569 BE (collective leave)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-05-29",
+      "type": "national",
+      "name_id": "Kenaikan Yesus Kristus",
+      "name_en": "Ascension of Jesus Christ",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-05-30",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Kenaikan Yesus Kristus",
+      "name_en": "Ascension of Jesus Christ (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-06-01",
+      "type": "national",
+      "name_id": "Hari Lahir Pancasila",
+      "name_en": "Pancasila Day",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-06-06",
+      "type": "national",
+      "name_id": "Idul Adha 1446 Hijriah",
+      "name_en": "Eid al-Adha 1446 H",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-06-09",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Adha 1446 Hijriah",
+      "name_en": "Eid al-Adha 1446 H (collective leave)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-06-27",
+      "type": "national",
+      "name_id": "1 Muharam Tahun Baru Islam 1447 Hijriah",
+      "name_en": "Islamic New Year 1447 H",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-08-17",
+      "type": "national",
+      "name_id": "Proklamasi Kemerdekaan",
+      "name_en": "Independence Day",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-08-18",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Proklamasi Kemerdekaan (HUT ke-80 RI)",
+      "name_en": "Independence Day (collective leave, 80th anniversary; added by SKB 933/1/3 Tahun 2025)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "national",
+      "name_id": "Maulid Nabi Muhammad S.A.W.",
+      "name_en": "Prophet Muhammad's Birthday",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-12-25",
+      "type": "national",
+      "name_id": "Kelahiran Yesus Kristus",
+      "name_en": "Christmas Day (Birth of Jesus Christ)",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    },
+    {
+      "date": "2025-12-26",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Kelahiran Yesus Kristus",
+      "name_en": "Christmas Day (Birth of Jesus Christ) (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/artikel/2025-08/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202025.pdf"
+    }
+  ],
+  "revisions": [
+    {
+      "version": "2025.1",
+      "date": "2024-10-14",
+      "notes": "SKB Menag/Menaker/MenPANRB No. 1017 Tahun 2024, No. 2 Tahun 2024, No. 2 Tahun 2024"
+    },
+    {
+      "version": "2025.2",
+      "date": "2025-08-07",
+      "notes": "SKB No. 933 Tahun 2025, No. 1 Tahun 2025, No. 3 Tahun 2025 (adds cuti bersama 18 Aug 2025)"
+    }
+  ],
+  "notes": "17 libur nasional + 11 cuti bersama per SKB 1017/2/2 Tahun 2024 jo. SKB 933/1/3 Tahun 2025. Verified 2026-11-03 against official decree/government publication."
+}

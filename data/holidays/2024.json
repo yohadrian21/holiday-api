@@ -1,0 +1,279 @@
+{
+  "year": 2024,
+  "data_version": "2024.2",
+  "updated_at": "2026-11-03T05:00:00Z",
+  "decrees": [
+    {
+      "kind": "original",
+      "ref": "SKB Menag/Menaker/MenPANRB No. 855 Tahun 2023, No. 3 Tahun 2023, No. 4 Tahun 2023",
+      "signed": "2023-09-12",
+      "url": "https://setkab.go.id/inilah-skb-3-menteri-libur-nasional-dan-cuti-bersama-2024/"
+    },
+    {
+      "kind": "revision",
+      "ref": "SKB No. 236 Tahun 2024, No. 1 Tahun 2024, No. 2 Tahun 2024 (perubahan nomenklatur, dates unchanged)",
+      "signed": "2024-02-26",
+      "url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    }
+  ],
+  "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+  "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf",
+  "entries": [
+    {
+      "date": "2024-01-01",
+      "type": "national",
+      "name_id": "Tahun Baru 2024 Masehi",
+      "name_en": "New Year's Day",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-02-08",
+      "type": "national",
+      "name_id": "Isra Mikraj Nabi Muhammad S.A.W.",
+      "name_en": "Isra Mi'raj of the Prophet Muhammad",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-02-09",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Tahun Baru Imlek 2575 Kongzili",
+      "name_en": "Chinese New Year 2575 (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-02-10",
+      "type": "national",
+      "name_id": "Tahun Baru Imlek 2575 Kongzili",
+      "name_en": "Chinese New Year 2575",
+      "weekday_id": "Sabtu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-03-11",
+      "type": "national",
+      "name_id": "Hari Suci Nyepi (Tahun Baru Saka 1946)",
+      "name_en": "Day of Silence (Nyepi, Saka New Year)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-03-12",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Suci Nyepi (Tahun Baru Saka 1946)",
+      "name_en": "Day of Silence (Nyepi, Saka New Year) (collective leave)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-03-29",
+      "type": "national",
+      "name_id": "Wafat Yesus Kristus",
+      "name_en": "Good Friday (Death of Jesus Christ)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-03-31",
+      "type": "national",
+      "name_id": "Kebangkitan Yesus Kristus (Paskah)",
+      "name_en": "Easter Sunday (Resurrection of Jesus Christ)",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-04-08",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Idul Fitri 1445 Hijriah",
+      "name_en": "Eid al-Fitr 1445 H (collective leave)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-04-09",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Idul Fitri 1445 Hijriah",
+      "name_en": "Eid al-Fitr 1445 H (collective leave)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-04-10",
+      "type": "national",
+      "name_id": "Hari Raya Idul Fitri 1445 Hijriah",
+      "name_en": "Eid al-Fitr 1445 H (day 1)",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-04-11",
+      "type": "national",
+      "name_id": "Hari Raya Idul Fitri 1445 Hijriah",
+      "name_en": "Eid al-Fitr 1445 H (day 2)",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-04-12",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Idul Fitri 1445 Hijriah",
+      "name_en": "Eid al-Fitr 1445 H (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-04-15",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Idul Fitri 1445 Hijriah",
+      "name_en": "Eid al-Fitr 1445 H (collective leave)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-05-01",
+      "type": "national",
+      "name_id": "Hari Buruh Internasional",
+      "name_en": "International Labour Day",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-05-09",
+      "type": "national",
+      "name_id": "Kenaikan Yesus Kristus",
+      "name_en": "Ascension of Jesus Christ",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-05-10",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Kenaikan Yesus Kristus",
+      "name_en": "Ascension of Jesus Christ (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-05-23",
+      "type": "national",
+      "name_id": "Hari Raya Waisak 2568 BE",
+      "name_en": "Vesak Day 2568 BE",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-05-24",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Waisak 2568 BE",
+      "name_en": "Vesak Day 2568 BE (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-06-01",
+      "type": "national",
+      "name_id": "Hari Lahir Pancasila",
+      "name_en": "Pancasila Day",
+      "weekday_id": "Sabtu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-06-17",
+      "type": "national",
+      "name_id": "Hari Raya Idul Adha 1445 Hijriah",
+      "name_en": "Eid al-Adha 1445 H",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-06-18",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Idul Adha 1445 Hijriah",
+      "name_en": "Eid al-Adha 1445 H (collective leave)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-07-07",
+      "type": "national",
+      "name_id": "1 Muharam Tahun Baru Islam 1446 Hijriah",
+      "name_en": "Islamic New Year 1446 H",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-08-17",
+      "type": "national",
+      "name_id": "Proklamasi Kemerdekaan",
+      "name_en": "Independence Day",
+      "weekday_id": "Sabtu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-09-16",
+      "type": "national",
+      "name_id": "Maulid Nabi Muhammad S.A.W.",
+      "name_en": "Prophet Muhammad's Birthday",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-12-25",
+      "type": "national",
+      "name_id": "Kelahiran Yesus Kristus",
+      "name_en": "Christmas Day (Birth of Jesus Christ)",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    },
+    {
+      "date": "2024-12-26",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Kelahiran Yesus Kristus",
+      "name_en": "Christmas Day (Birth of Jesus Christ) (collective leave)",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024",
+      "source_url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2024-02/SKB%20Perubahan%20Libur%20Nasional%20dan%20Cuti%20Bersama%202024%20_0.pdf"
+    }
+  ],
+  "revisions": [
+    {
+      "version": "2024.1",
+      "date": "2023-09-12",
+      "notes": "SKB Menag/Menaker/MenPANRB No. 855 Tahun 2023, No. 3 Tahun 2023, No. 4 Tahun 2023"
+    },
+    {
+      "version": "2024.2",
+      "date": "2024-02-26",
+      "notes": "SKB No. 236 Tahun 2024, No. 1 Tahun 2024, No. 2 Tahun 2024 (perubahan nomenklatur, dates unchanged)"
+    }
+  ],
+  "notes": "17 libur nasional + 10 cuti bersama per SKB 855/3/4 Tahun 2023 jo. SKB 236/1/2 Tahun 2024. Verified 2026-11-03 against official decree/government publication."
+}

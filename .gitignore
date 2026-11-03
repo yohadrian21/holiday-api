@@ -1,0 +1,10 @@
+node_modules/
+.wrangler/
+.dev.vars
+dist/
+coverage/
+*.log
+.secrets/
+.env
+.env.*
+!.env.example

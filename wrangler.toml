@@ -1,0 +1,33 @@
+name = "holiday-api"
+main = "src/index.ts"
+compatibility_date = "2026-08-15"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "holiday-api-staging"
+# Staging D1 on Yohanes's Cloudflare account (created 2026-11-03). Create a separate DB for production.
+# Local dev (`wrangler dev --local`, `--local` d1 commands) uses a local SQLite copy, not this DB.
+database_id = "c9bd9d71-40d2-4ec6-9312-ce65e8510507"
+migrations_dir = "migrations"
+
+# Burst limiting (Workers Rate Limiting binding), one namespace per tier.
+# Keep `limit` in sync with TIERS[tier].burstPer10s in src/config.ts; period must be 10 or 60.
+# namespace_id is any account-unique positive integer string.
+[[ratelimits]]
+name = "BURST_FREE"
+namespace_id = "1001"
+simple = { limit = 50, period = 10 }
+
+[[ratelimits]]
+name = "BURST_STARTER"
+namespace_id = "1002"
+simple = { limit = 200, period = 10 }
+
+[[ratelimits]]
+name = "BURST_BUSINESS"
+namespace_id = "1003"
+simple = { limit = 500, period = 10 }
+
+# Secrets (set locally in .dev.vars, remotely with `wrangler secret put`):
+#   RAPIDAPI_PROXY_SECRET

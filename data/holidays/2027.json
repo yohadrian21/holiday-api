@@ -1,0 +1,262 @@
+{
+  "year": 2027,
+  "data_version": "2027.1",
+  "updated_at": "2026-11-03T05:00:00Z",
+  "decrees": [
+    {
+      "kind": "original",
+      "ref": "SKB Menag/Menaker/MenPANRB No. 1205 Tahun 2026, No. 3 Tahun 2026, No. 2 Tahun 2026",
+      "signed": "2026-09-15",
+      "url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    }
+  ],
+  "source_ref": "SKB 1205/3/2 Tahun 2026",
+  "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf",
+  "secondary_urls": [
+    "https://setneg.go.id/baca/index/inilah_skb_3_menteri_libur_nasional_dan_cuti_bersama_2027"
+  ],
+  "entries": [
+    {
+      "date": "2027-01-01",
+      "type": "national",
+      "name_id": "Tahun Baru 2027 Masehi",
+      "name_en": "New Year's Day",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-01-05",
+      "type": "national",
+      "name_id": "Isra Mikraj Nabi Muhammad S.A.W. 1448 Hijriah",
+      "name_en": "Isra Mi'raj of the Prophet Muhammad (1448 H)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-02-05",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Tahun Baru Imlek 2578 Kongzili",
+      "name_en": "Chinese New Year 2578 (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-02-06",
+      "type": "national",
+      "name_id": "Tahun Baru Imlek 2578 Kongzili",
+      "name_en": "Chinese New Year 2578",
+      "weekday_id": "Sabtu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-08",
+      "type": "national",
+      "name_id": "Hari Suci Nyepi (Tahun Baru Saka 1949)",
+      "name_en": "Day of Silence (Nyepi, Saka New Year)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-09",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Fitri 1448 Hijriah",
+      "name_en": "Eid al-Fitr 1448 H (collective leave)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-10",
+      "type": "national",
+      "name_id": "Idul Fitri 1448 Hijriah",
+      "name_en": "Eid al-Fitr 1448 H (day 1)",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-11",
+      "type": "national",
+      "name_id": "Idul Fitri 1448 Hijriah",
+      "name_en": "Eid al-Fitr 1448 H (day 2)",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-12",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Fitri 1448 Hijriah",
+      "name_en": "Eid al-Fitr 1448 H (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-15",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Fitri 1448 Hijriah",
+      "name_en": "Eid al-Fitr 1448 H (collective leave)",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-25",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Wafat Yesus Kristus",
+      "name_en": "Good Friday (Death of Jesus Christ) (collective leave)",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-26",
+      "type": "national",
+      "name_id": "Wafat Yesus Kristus",
+      "name_en": "Good Friday (Death of Jesus Christ)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-03-28",
+      "type": "national",
+      "name_id": "Kebangkitan Yesus Kristus (Paskah)",
+      "name_en": "Easter Sunday (Resurrection of Jesus Christ)",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-05-01",
+      "type": "national",
+      "name_id": "Hari Buruh Internasional",
+      "name_en": "International Labour Day",
+      "weekday_id": "Sabtu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-05-06",
+      "type": "national",
+      "name_id": "Kenaikan Yesus Kristus",
+      "name_en": "Ascension of Jesus Christ",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-05-17",
+      "type": "national",
+      "name_id": "Idul Adha 1448 Hijriah",
+      "name_en": "Eid al-Adha 1448 H",
+      "weekday_id": "Senin",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-05-18",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Idul Adha 1448 Hijriah",
+      "name_en": "Eid al-Adha 1448 H (collective leave)",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-05-19",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Hari Raya Waisak 2571 BE",
+      "name_en": "Vesak Day 2571 BE (collective leave)",
+      "weekday_id": "Rabu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-05-20",
+      "type": "national",
+      "name_id": "Hari Raya Waisak 2571 BE",
+      "name_en": "Vesak Day 2571 BE",
+      "weekday_id": "Kamis",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-06-01",
+      "type": "national",
+      "name_id": "Hari Lahir Pancasila",
+      "name_en": "Pancasila Day",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-06-06",
+      "type": "national",
+      "name_id": "1 Muharam Tahun Baru Islam 1449 Hijriah",
+      "name_en": "Islamic New Year 1449 H",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-08-15",
+      "type": "national",
+      "name_id": "Maulid Nabi Muhammad S.A.W.",
+      "name_en": "Prophet Muhammad's Birthday",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-08-17",
+      "type": "national",
+      "name_id": "Proklamasi Kemerdekaan",
+      "name_en": "Independence Day",
+      "weekday_id": "Selasa",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-12-24",
+      "type": "cuti_bersama",
+      "name_id": "Cuti Bersama Kelahiran Yesus Kristus",
+      "name_en": "Christmas Day (Birth of Jesus Christ) (collective leave)",
+      "weekday_id": "Jumat",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-12-25",
+      "type": "national",
+      "name_id": "Kelahiran Yesus Kristus",
+      "name_en": "Christmas Day (Birth of Jesus Christ)",
+      "weekday_id": "Sabtu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    },
+    {
+      "date": "2027-12-26",
+      "type": "national",
+      "name_id": "Isra Mikraj Nabi Muhammad S.A.W. 1449 Hijriah",
+      "name_en": "Isra Mi'raj of the Prophet Muhammad (1449 H)",
+      "weekday_id": "Minggu",
+      "source_ref": "SKB 1205/3/2 Tahun 2026",
+      "source_url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+    }
+  ],
+  "revisions": [
+    {
+      "version": "2027.1",
+      "date": "2026-09-15",
+      "notes": "SKB Menag/Menaker/MenPANRB No. 1205 Tahun 2026, No. 3 Tahun 2026, No. 2 Tahun 2026"
+    }
+  ],
+  "notes": "18 libur nasional + 8 cuti bersama per SKB 1205/3/2 Tahun 2026. Verified 2026-11-03 against official decree/government publication."
+}
